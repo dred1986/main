@@ -7,7 +7,9 @@
     "start": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=production webpack",
     "type-check:watch": "npm run type-check -- --watch",
-    "test": "react-scripts test",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src test/utils test/components test/hooks",
+    "prepare": "npm run clean && npm run build",
     "types": "graphql-codegen --config codegen.yml"
   },
   "browserslist": [
