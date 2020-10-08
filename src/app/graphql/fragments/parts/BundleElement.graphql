@@ -1,0 +1,9 @@
+#import "../Item.graphql"
+
+fragment BundleElement on ComponentBundleItem {
+  id
+  letter
+  item {
+    ...Item
+  }
+}

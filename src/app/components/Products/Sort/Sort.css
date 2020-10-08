@@ -1,0 +1,25 @@
+.container {
+  @mixin pattern2 var(--layoutbg-main);
+  width: 100%;
+  padding: 0.5ch;
+
+  & button {
+    padding: 0.5ch;
+    color: var(--text-main);
+    font-size: 1rem;
+    margin-left: 1ch;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s ease;
+  }
+  & .active {
+    cursor: default;
+    background-color: var(--accent-color1);
+  }
+  & .back {
+    font-size: 3rem;
+    color: var(--nav-element-color5);
+  }
+}

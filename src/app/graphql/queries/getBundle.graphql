@@ -1,0 +1,7 @@
+#import "../fragments/Product.graphql"
+
+query getBundle($id: ID!) {
+  product(id: $id) {
+    ...Product
+  }
+}

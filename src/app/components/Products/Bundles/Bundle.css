@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: var(--blockbg-main);
+
+  & .desc,
+  .info {
+    padding: 0.2em;
+    @mixin M {
+      padding: 1em;
+    }
+  }
+
+  & .desc {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    text-align-last: center;
+
+    & h2 {
+      white-space: pre-line;
+      font-size: 3rem;
+      padding-bottom: 25px;
+    }
+    & p {
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+  /* & .desc::before {
+    background-color: var(--blockbg-main);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    content: "";
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+  } */
+  & .info {
+    display: flex;
+    justify-content: space-evenly;
+    & div + div {
+      margin-top: 1ch;
+    }
+    &_dimensions {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 0.5ch;
+      height: fit-content;
+      padding: 0.5ch;
+      border: 1px dashed var(--nav-element-color3);
+      & > span {
+        color: var(--accent-color2);
+        font-size: 1.4rem;
+      }
+      & > p {
+        text-align: center;
+        align-self: center;
+      }
+    }
+    &_inside {
+      @mixin pattern1 var(--accent-color1), 5px;
+      height: fit-content;
+      width: fit-content;
+      padding: 1ch;
+      text-align: center;
+      & > p {
+        cursor: pointer;
+        padding: 0.2ch 0;
+      }
+    }
+  }
+  & .price {
+    display: flex;
+    font-size: 2rem;
+    align-self: flex-end;
+    background-color: var(--accent-color1);
+    & h2 {
+      align-self: center;
+    }
+    & h2 > span {
+      font-size: 2.8rem;
+      font-weight: 100;
+    }
+    & > span,
+    h2 {
+      padding: 0.5ch;
+    }
+    & > span {
+      color: var(--text-alt);
+      background-color: var(--accent-color2);
+      font-size: 3rem;
+    }
+  }
+}
+
+.bullets {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: rgb(0 0 0 / 20%);
+  & p {
+    display: none;
+  }
+  & div {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 1px;
+    background-color: var(--nav-element-color2);
+    @mixin M {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+fragment Price on ComponentPricePrice {
+  id
+  base_price
+  additional
+  discount
+  overall
+}

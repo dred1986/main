@@ -1,0 +1,55 @@
+.header {
+  @mixin pattern4 var(--headerbg);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+
+  & svg {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &_logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &_title {
+    left: 50%;
+    transform: translateX(calc(-50% + 10px));
+  }
+  &_description {
+    top: 35px;
+    left: 50%;
+    transform: translateX(calc(-50% - 3px));
+  }
+
+  & span {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 30px;
+    z-index: 10;
+    color: var(--nav-element-color3);
+
+    &:first-of-type {
+      width: 55px;
+      height: 55px;
+      font-size: 40px;
+    }
+
+    &:last-of-type {
+      width: 55px;
+      height: 55px;
+      padding-right: 4px;
+      font-size: 42px;
+    }
+
+    & svg {
+      align-self: center;
+    }
+  }
+}

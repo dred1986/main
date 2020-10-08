@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.grid {
+  --col: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--col), 1fr);
+  grid-gap: 5px;
+  padding: 0;
+  @mixin M {
+    --col: 3;
+  }
+  @mixin L {
+    --col: 5;
+  }
+}
+.bullets {
+  align-self: center;
+  padding-top: 15px;
+  display: flex;
+
+  & div {
+    border-radius: 2px;
+    position: relative;
+  }
+  & p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    color: var(--text-alt);
+  }
+  & div {
+    cursor: pointer;
+    margin: 1px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--nav-element-color5);
+  }
+}

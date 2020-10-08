@@ -1,0 +1,125 @@
+.container {
+  &_add {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1ch;
+    padding: 0 0.5ch;
+
+    &_range {
+      position: relative;
+      width: 100%;
+    }
+    &_bar {
+      background-color: var(--nav-element-color5);
+      height: 2px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    &_handle {
+      cursor: pointer;
+      position: relative;
+      width: 0px;
+      display: flex;
+      justify-content: center;
+      bottom: 5px;
+
+      & path {
+        fill: var(--accent-color2);
+      }
+    }
+    &_circle {
+      position: absolute;
+      top: -9px;
+      left: -24px;
+    }
+    &_knob {
+      position: absolute;
+      background-color: var(--nav-element-color5);
+      height: 13px;
+      top: 50%;
+      width: 2px;
+    }
+    &_count {
+      color: var(--text-alt);
+      font-family: "sans-serif";
+      font-weight: 800;
+      text-align: center;
+      user-select: none;
+
+      &_inactive {
+        position: absolute;
+        top: -10px;
+        color: var(var(--text-alt));
+      }
+    }
+
+    &_input {
+      width: 100%;
+    }
+
+    & span {
+      font-size: 26px;
+      color: var(--nav-element-color5);
+      &:first-of-type {
+        margin-right: 5px;
+      }
+      &:last-of-type {
+        margin-left: 5px;
+      }
+    }
+
+    & button {
+      background-color: var(--text-underline3);
+      border-radius: 3px;
+      padding: 0.5ch;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      border: none;
+      box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &_images {
+    position: relative;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  &_info {
+    word-break: break-all;
+    padding: 0 0.5ch;
+    & h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1ch 0;
+    }
+  }
+  &_price {
+    padding: 1ch 0;
+    & h3 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
+
+.bullets {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  & p {
+    display: none;
+  }
+  & div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1px;
+    background-color: var(--nav-element-color2);
+  }
+}

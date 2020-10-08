@@ -1,0 +1,53 @@
+@import "./palette";
+@import "./sizes";
+@import "./mixin.css";
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+}
+html,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: var(--text-main);
+  background-color: var(--layoutbg-main);
+  /* @mixin pattern3 var(--layoutbg-main);
+  background-position-y: 190%; */
+  overflow-y: scroll;
+
+  @mixin U {
+    width: 80%;
+    margin: 0 auto;
+  }
+  & button:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+body::-webkit-scrollbar {
+  position: absolute;
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--nav-element-color5);
+}

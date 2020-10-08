@@ -1,0 +1,11 @@
+.cartPage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @mixin pattern1 var(--headerbg);
+  box-shadow: 0 20px 40px -10px rgb(0 0 0 / 0.2);
+
+  & .list {
+    padding: 7ch 1ch 1ch;
+  }
+}

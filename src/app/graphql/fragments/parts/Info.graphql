@@ -1,0 +1,10 @@
+fragment Info on ComponentInfoInfo {
+  id
+  name
+  description
+  image {
+    id
+    url
+    formats
+  }
+}

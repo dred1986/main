@@ -1,0 +1,30 @@
+.container {
+  @mixin pattern1 var(--nav-element-color5);
+  color: var(--text-alt);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1ch;
+
+  &_controls {
+    cursor: pointer;
+    font-size: 3rem;
+  }
+  &_add {
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 1ch;
+    color: var(--text-alt);
+    background-color: var(--accent-color2);
+  }
+
+  &_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}

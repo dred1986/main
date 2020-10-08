@@ -1,0 +1,33 @@
+#import "./parts/Info.graphql"
+#import "./parts/Flags.graphql"
+#import "./parts/BundleElement.graphql"
+#import "./parts/Dimensions.graphql"
+#import "./parts/Price.graphql"
+#import "./Item.graphql"
+#import "./Box.graphql"
+#import "./Tag.graphql"
+
+fragment Product on Product {
+  id
+  info {
+    ...Info
+  }
+  flags {
+    ...Flags
+  }
+  tags {
+    ...Tag
+  }
+  box {
+    ...Box
+  }
+  bundle {
+    ...BundleElement
+  }
+  dimensions {
+    ...Dimensions
+  }
+  price {
+    ...Price
+  }
+}

@@ -1,0 +1,9 @@
+#import "../fragments/Box.graphql"
+
+mutation addBox($input: createBoxInput) {
+  createBox(input: $input) {
+    box {
+      ...Box
+    }
+  }
+}

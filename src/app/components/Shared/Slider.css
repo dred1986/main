@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+
+  & img {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,80 @@
+.profile {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 15px 5px 5px;
+  flex-flow: column wrap;
+  @mixin pattern1 var(--headerbg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgb(0 0 0 / 0.2);
+
+  width: 250px;
+  height: 250px;
+  & button {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      filter: hue-rotate(180deg);
+    }
+  }
+
+  &_head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    margin-bottom: 20px;
+
+    & h2 {
+      font-size: 1.3rem;
+    }
+
+    & button {
+      cursor: pointer;
+      font-size: 1rem;
+      overflow: hidden;
+      color: var(--text-main);
+      border-width: 2px;
+      border-style: none none solid none;
+      background: none;
+      outline: none;
+      box-sizing: border-box;
+      font-size: 1rem;
+      line-height: 1rem;
+      transition: 0.5s ease;
+    }
+    &_logout {
+      background-color: var(--text-underline1);
+      border-color: var(--text-underline1);
+      color: var(--text-alt);
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+    & button {
+      outline: none;
+      box-sizing: border-box;
+      padding: 0.5ch;
+      margin-top: 2ch;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: bold;
+      background-color: var(--nav-element-color5);
+      color: var(--text-alt);
+      border: none;
+      box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

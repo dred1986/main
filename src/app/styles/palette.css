@@ -1,0 +1,71 @@
+html {
+  /* //  LAYOUT */
+  --layoutbg-main: #fdf1ec;
+  --layoutbg-alt: #000;
+
+  --shadow: #f2f3f5;
+
+  --nav-color1: #f2ebe4;
+  --nav-color2: #fff1e2;
+
+  --nav-element-color1: #441800;
+  --nav-element-color2: #f2ebe4;
+  --nav-element-color3: #ed6e8e;
+  --nav-element-color4: #ff9898;
+  --nav-element-color5: #e63946;
+  --nav-element-color6: #ff7c86;
+
+  --accent-color1: #ffbe0b;
+  --accent-color2: #e03030;
+  --accent-color3: #00ff43;
+  --accent-color7: #5e31dc;
+  --accent-color8: #3155dc;
+
+  --loading-bg: #eaddd0;
+  --headerbg: #fff;
+
+  /* //  GRADIENTS */
+  --nav-element-gradient1: linear-gradient(
+    30deg,
+    var(--nav-element-color3) 5%,
+    var(--nav-element-color4) 95%
+  );
+  --nav-element-gradient2: linear-gradient(
+      -213deg,
+      var(--nav-element-color5) 0%,
+      var(--nav-element-color6) 100%
+    ),
+    linear-gradient(
+      32deg,
+      rgba(255, 255, 255, 0.25) 33%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  --nav-element-gradient3: linear-gradient(
+      -213deg,
+      var(--accent-color7) 0%,
+      var(--accent-color8) 100%
+    ),
+    linear-gradient(
+      32deg,
+      rgba(255, 255, 255, 0.25) 33%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+
+  /* //  BLOCK */
+  --blockbg-main: #fdf4ef;
+  --blockbg-alt: #000;
+
+  /* //  TEXT */
+  --text-main: #441800;
+  --text-underline: #9e9e9e;
+  --text-alt: #fff;
+
+  --text-underline1: #ed6e8e;
+  --text-underline2: #e63946;
+  --text-underline3: #ffbe0b;
+
+  /* //  ERROR */
+  --errorbg-main: #e03030;
+  --errorbg-font-alt: #e63946;
+  --errorbg-font: #fff;
+}

@@ -1,0 +1,7 @@
+#import "../fragments/Item.graphql"
+
+query getBoxes($start: Int, $limit: Int) {
+  items(sort: "id:desc", start: $start, limit: $limit) {
+    ...Item
+  }
+}

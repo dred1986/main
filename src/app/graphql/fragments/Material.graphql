@@ -1,0 +1,8 @@
+#import "./parts/Info.graphql"
+
+fragment Material on Material {
+  id
+  info {
+    ...Info
+  }
+}

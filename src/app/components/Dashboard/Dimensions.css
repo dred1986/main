@@ -1,0 +1,29 @@
+.container {
+  @mixin pattern5 var(--nav-element-color5);
+  color: var(--text-alt);
+  padding: 1ch 0;
+  margin-bottom: 10px;
+
+  &_wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0.5ch 1.5ch;
+    background-color: var(--nav-element-color2);
+    width: fit-content;
+    color: var(--text-main);
+    & :nth-child(odd) {
+      display: block;
+      margin-top: 1ch;
+      margin-bottom: 0.3ch;
+      font-size: 0.9rem;
+    }
+    & :nth-child(even) {
+      padding: 0.2ch 0.5ch;
+      margin-bottom: 0.5ch;
+      border: none;
+      font-size: 1.5rem;
+    }
+  }
+}

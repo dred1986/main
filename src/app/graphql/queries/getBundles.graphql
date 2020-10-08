@@ -1,0 +1,7 @@
+#import "../fragments/Product.graphql"
+
+query getBundles($start: Int, $limit: Int) {
+  products(sort: "id:desc", start: $start, limit: $limit) {
+    ...Product
+  }
+}

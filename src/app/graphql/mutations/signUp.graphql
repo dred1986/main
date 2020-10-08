@@ -1,0 +1,10 @@
+#import "../fragments/User.graphql"
+
+mutation signUp($input: UsersPermissionsRegisterInput!) {
+  register(input: $input) {
+    jwt
+    user {
+      ...User
+    }
+  }
+}

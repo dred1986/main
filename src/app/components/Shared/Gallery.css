@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+
+  & .wrapper {
+    cursor: -webkit-grab;
+    display: flex;
+    justify-content: center;
+    & img {
+      width: auto;
+    }
+  }
+}
+.fullscreen {
+  @mixin roundedCard;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
+  & img {
+    cursor: zoom-out;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    left: 0;
+    border: 1px solid var(--nav-element-color1);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

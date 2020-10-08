@@ -1,0 +1,10 @@
+#import "../fragments/User.graphql"
+
+mutation logInMutation($input: UsersPermissionsLoginInput!) {
+  login(input: $input) {
+    jwt
+    user {
+      ...User
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation addBundle($input: createProductInput) {
+  createProduct(input: $input) {
+    product {
+      id
+    }
+  }
+}

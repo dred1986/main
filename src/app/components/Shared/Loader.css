@@ -1,0 +1,9 @@
+.loader {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: var(--nav-element-color3);
+}

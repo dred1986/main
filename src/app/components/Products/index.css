@@ -1,0 +1,12 @@
+.main {
+  position: relative;
+  overflow: hidden;
+
+  &_content {
+    display: flex;
+    flex-flow: column-reverse;
+    @mixin M {
+      flex-flow: row;
+    }
+  }
+}

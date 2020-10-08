@@ -1,0 +1,9 @@
+#import "../fragments/Item.graphql"
+
+mutation addItem($input: createItemInput) {
+  createItem(input: $input) {
+    item {
+      ...Item
+    }
+  }
+}

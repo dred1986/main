@@ -1,0 +1,5 @@
+fragment Flags on ComponentInfoFlags {
+  id
+  is_available_in_constructor
+  is_editable
+}

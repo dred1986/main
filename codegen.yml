@@ -1,0 +1,12 @@
+overwrite: true
+schema: http://localhost:3000/graphql
+generates:
+  ./src/app/@types/queryTypes.d.ts:
+    plugins:
+      - add: "/* tslint:disable */"
+      - typescript
+      - typescript-operations
+      # - typescript-react-apollo
+      - typescript-graphql-files-modules
+plugins:
+  - "introspection"

@@ -1,0 +1,26 @@
+#import "./parts/Info.graphql"
+#import "./parts/Flags.graphql"
+#import "./parts/Dimensions.graphql"
+#import "./parts/Price.graphql"
+#import "./Tag.graphql"
+
+fragment Box on Box {
+  id
+  countmin
+  countmax
+  tags {
+    ...Tag
+  }
+  price {
+    ...Price
+  }
+  info {
+    ...Info
+  }
+  flags {
+    ...Flags
+  }
+  dimensions {
+    ...Dimensions
+  }
+}

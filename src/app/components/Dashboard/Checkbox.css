@@ -1,0 +1,16 @@
+.container {
+  background-color: var(--nav-element-color5);
+  padding: 1ch;
+  margin-bottom: 10px;
+  & .wrapper {
+    background-color: var(--accent-color1);
+    padding: 1ch;
+  }
+}
+.container,
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}

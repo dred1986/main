@@ -1,0 +1,7 @@
+#import "../fragments/Banner.graphql"
+
+query getBanners {
+  banners {
+    ...Banner
+  }
+}

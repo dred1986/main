@@ -1,0 +1,12 @@
+#import "./parts/Info.graphql"
+#import "./Tag.graphql"
+
+fragment Banner on Banner {
+  id
+  info {
+    ...Info
+  }
+  tags {
+    ...Tag
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--nav-element-color5);
+  color: var(--text-alt);
+  padding: 1ch 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+  & .added {
+    background-color: var(--accent-color3);
+  }
+  & .availible {
+    background-color: var(--accent-color1);
+  }
+  & .list {
+    display: flex;
+    justify-content: center;
+    padding: 0.5ch;
+    gap: 1ch;
+    & p {
+      color: var(--text-main);
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}

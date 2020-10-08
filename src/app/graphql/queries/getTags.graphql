@@ -1,0 +1,6 @@
+#import "../fragments/Tag.graphql"
+query getTags($name: String) {
+  tags(where: { name: $name }) {
+    ...Tag
+  }
+}

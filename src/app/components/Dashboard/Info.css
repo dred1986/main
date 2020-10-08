@@ -1,0 +1,30 @@
+.info {
+  display: grid;
+  grid-template-columns: [column1] auto [column2] auto;
+  row-gap: 10px;
+  margin: 10px 0;
+
+  & input,
+  textarea {
+    grid-column: 1 / span 2;
+    font-size: 1rem;
+    border: 1ch solid transparent;
+    outline: none;
+    padding: 0.5ch;
+    background-color: var(--nav-element-color5);
+    color: var(--text-alt);
+    transition: 0.5s ease-in-out;
+
+    &::placeholder {
+      color: var(--text-alt);
+    }
+
+    &:focus {
+      border: 1ch solid var(--nav-element-color4);
+    }
+  }
+  & textarea {
+    height: 15ch;
+    resize: none;
+  }
+}

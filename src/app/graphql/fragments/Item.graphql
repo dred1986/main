@@ -1,0 +1,28 @@
+#import "./parts/Info.graphql"
+#import "./parts/Flags.graphql"
+#import "./parts/Dimensions.graphql"
+#import "./parts/Price.graphql"
+#import "./Tag.graphql"
+#import "./Material.graphql"
+
+fragment Item on Item {
+  id
+  tags {
+    ...Tag
+  }
+  materials {
+    ...Material
+  }
+  price {
+    ...Price
+  }
+  info {
+    ...Info
+  }
+  flags {
+    ...Flags
+  }
+  dimensions {
+    ...Dimensions
+  }
+}

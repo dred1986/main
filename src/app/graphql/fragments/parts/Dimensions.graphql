@@ -1,0 +1,7 @@
+fragment Dimensions on ComponentDimensionsDimensions {
+  id
+  weight
+  width
+  breadth
+  height
+}

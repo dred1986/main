@@ -1,0 +1,8 @@
+#import "./parts/Info.graphql"
+
+fragment Tag on Tags {
+  id
+  info {
+    ...Info
+  }
+}

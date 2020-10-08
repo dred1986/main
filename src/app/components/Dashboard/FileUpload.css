@@ -1,0 +1,22 @@
+.filesupload {
+  @mixin pattern5 var(--nav-element-color5);
+  color: var(--text-alt);
+  display: flex;
+  flex-flow: column;
+  padding: 1ch 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  & ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 2ch;
+    & li {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+}

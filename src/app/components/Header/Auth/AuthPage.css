@@ -1,0 +1,108 @@
+.auth {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 20px 5px 5px;
+  flex-flow: column wrap;
+  @mixin pattern1 var(--headerbg);
+  border-radius: 0 0 10px 0;
+  @mixin M {
+    border-radius: 30px 10px 10px 10px;
+  }
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgb(0 0 0 / 0.2);
+
+  & button {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  & button:disabled {
+    cursor: wait;
+    filter: grayscale(1);
+  }
+
+  & button:first-of-type {
+    overflow: hidden;
+    color: var(--text-main);
+    border-width: 2px;
+    border-style: none none solid none;
+    background: none;
+    outline: none;
+    margin-bottom: 3ch;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: 0.5s ease;
+  }
+  &_login {
+    align-self: flex-end;
+    background-color: var(--text-underline1);
+    border-color: var(--text-underline1);
+    color: var(--text-alt);
+  }
+
+  &_signup {
+    align-self: flex-end;
+    background-color: var(--text-underline3);
+    border-color: var(--text-underline3);
+    color: var(--text-main);
+  }
+
+  & input + input {
+    margin-top: 1ch;
+  }
+
+  & input {
+    position: relative;
+    font-size: 1rem;
+    background-color: var(--nav-color1);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    padding: 1ch;
+    outline: none;
+    text-align: center;
+    transition: 0.5s ease;
+
+    &:disabled {
+      cursor: wait;
+      filter: grayscale(1);
+    }
+  }
+  &_error {
+    font-size: 0.7rem;
+    color: var(--errorbg-font-alt);
+  }
+  & span {
+    color: red;
+    font-size: 1rem;
+  }
+
+  & button:last-of-type {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0.5ch;
+    margin-top: 2ch;
+    height: 2rem;
+    line-height: 1.6rem;
+    width: 100%;
+    transition: 0.5s ease;
+
+    & span {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+      color: white;
+      margin: 0 auto;
+      background: none;
+      & svg {
+        cursor: wait;
+      }
+    }
+  }
+}

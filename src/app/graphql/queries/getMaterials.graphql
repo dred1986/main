@@ -1,0 +1,7 @@
+#import "../fragments/Material.graphql"
+
+query getMaterials {
+  materials {
+    ...Material
+  }
+}
