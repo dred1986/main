@@ -10,6 +10,7 @@
     "test": "jest --passWithNoTests",
     "clean": "rimraf lib dist es coverage",
     "lint": "eslint src test/utils test/components test/hooks",
+    "prepare": "npm run clean && npm run build",
     "types": "graphql-codegen --config codegen.yml"
   },
   "browserslist": [

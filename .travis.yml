@@ -5,6 +5,7 @@ node_js:
   - 12
 before_install:
   - npm install -i jest
+  - npm install -i rimraf
 branches:
   only:
     - master
