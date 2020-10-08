@@ -7,6 +7,7 @@
     "start": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=production webpack",
     "type-check:watch": "npm run type-check -- --watch",
+    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/registerServiceWorker.js",
     "types": "graphql-codegen --config codegen.yml"
   },
   "browserslist": [
@@ -72,6 +73,8 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "codecov.io": "^0.1.6",
+    "coveralls": "^3.1.0",
     "css-loader": "^3.6.0",
     "css-modules-typescript-loader": "^4.0.0",
     "css-mqpacker": "^7.0.0",
