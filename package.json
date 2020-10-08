@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=production webpack",
     "type-check:watch": "npm run type-check -- --watch",
-    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/registerServiceWorker.js",
+    "test": "react-scripts test",
     "types": "graphql-codegen --config codegen.yml"
   },
   "browserslist": [
