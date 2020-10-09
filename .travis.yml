@@ -6,6 +6,7 @@ node_js:
 before_install:
   - npm install -i jest
   - npm install -i rimraf
+  - npm install -i babel-jest
 branches:
   only:
     - master
