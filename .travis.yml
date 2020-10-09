@@ -16,7 +16,7 @@ after_success:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 deploy:
   provider: heroku
-  strategy: git
+  strategy: api
   api_key:
     secure: 1PfYq0D903TJ5uBKJ+ehcWpbh3fo6AOt/WgBj88tnOVz2w0FIP2pUmKtELNr0S/s0YbQP/Qqg8NTDlAHRLTtrgRCShT6xR4psDkFaZIIvezAdMdlWbAnCvwGVsTBFYkiHljjFYMjARWK8BvQ2rt3jwuBwDghtN4isd28hD5QmjSVLTVoPBBglp+blw7pGNCs7fBRaLIzUtKXyTKyOHf5    7GvnyPVggHF5xEyXGqKCFet3RGabE2bFB1ToivaycAWilsW+I470BM6gvHSOcDluBxzB2CYcXa36/gJ3FTLpc3rw6yQPpaoscAQXbP7meEHzKnSv    KmtCRFR/HTIjB4tj7dboA8HX5cskQJbgvdzQ53PrB7Fsr2A7p7ecHn3oPFxFEkvaAKJxyZeIxDBWakRQgw+fNTbAVgq1E/Pmh/VsXCDxSJCtRsTZ3naakiBqjHG7pDuHEQrzI1IxDYy2ADYz1YPyZVS+MGFAud0Gi1OMGr3Q6xMWsscA7CIo44hpRWuhzbKeXXvluVxcMhnjzbs1RGodXlgAP6LPcRtsA6Bap/zbQGTDWInaMwGr6X5B5Xoki8ElHoXItdf01muVXyJCB0VmwWgUwidaBEoBzK83z00ZlABAnEoNJbKNak5x8suNl+AA65gX4oHL3RXAXoO8Im+1oRgnMyvOgDHUFi9EZ2c=
     app: sweetdreamsrucom
