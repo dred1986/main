@@ -7,13 +7,7 @@ before_install:
   - npm install -i babel-jest
 branches:
   only:
-    - master
-env:
-  - API_URL=https://backend.sweetdreams.ru.com
-  - GRAPHQL=https://backend.sweetdreams.ru.com/graphql
-  - TELEGRAM_API_KEY=1366976070:AAHlu_7muAY2D7QsLYtHEzAVd5gTNv_t_HI
-  - VK_API_ID=7155386
-  - LOCAL_STORAGE_TOKEN=token   
+    - master 
 script:
     - npm test
     - npm run build    
