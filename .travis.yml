@@ -17,7 +17,6 @@ after_success:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 deploy:
   provider: heroku
-  api_key:
-    secure: bd4c1f44-1143-45e8-8849-35498252096d
+  api_key: bd4c1f44-1143-45e8-8849-35498252096d
   app: sweetdreamsrucom
   
