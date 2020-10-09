@@ -22,4 +22,4 @@ deploy:
   app: sweetdreamsrucom
   on:
     repo: dred1986/main
-    branch: ""
+  
