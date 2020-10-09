@@ -20,6 +20,8 @@ deploy:
   api_key:
     secure: qp9oicX5Wrbi5Pt5WD+WjmMX/OlJoBjSAgHVzjd3gUwmaZy0ZGAQq5fqGKLsTZ4VDJ1f7cN0DD/C2ao3P4ighdn7k5sYoON9ogOwR/+CD1/b/G30JLGNu1t/O2kuLqaSEBTEti+kWo7oVgDyEqYmqP/58FmN5dPSGE2a+3/P2wG+lku0z1IZ8KRHFEcLoKrkBXADPISMzP3/8UdCyGvP    tU7htOPXi7odX5eEYsoyVEwAu266g+JdJPbrYGeacBJOyFqurXvaLHY9LYDj0NQI3fzoHmR9ByFoYWN8SHfuJoD4POR4A562zmqnedB7xV1Rk3e+vIrpQHJDp32bYnGrEzzFOAW21XYOpFGYPXF68MbYLUI/juBgEhC2/tb/yHUQtC7XEVJc/iImA/2ulijZEbgNVSO/0sO94u64SPayb9Asn/JGZpCx    JzAF8Em5zsmbYEZejvgth4mEnUIagUjGx1G/zi/p0pBJwj9Dg8sV8PLWA7BSDda8EAtPov+LyCQoUvpEDeIXM8LH4rLQstVzjjEQqRyVS27Dcsm1s3rzHIGszBqTKlITYnfj0pSPz9hmKkCEOGYpNQD0YvSYKBAXvqXf05vetDa5+QWax+VDzBtlZrlcJyXaCZWHKIAa1nYbvdErMO+th/Tlk3sIc7mgEPl7L0+3fpaLB+fS9i0oAi8=
   app: sweetdreamsrucom
-  on: production
+  on:
+    repo: dred1986/main
+    branch: master
 
   
