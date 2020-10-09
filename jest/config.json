@@ -1,22 +1,22 @@
 {
   "automock": true,
-  "testPathDirs": [
-    "src"
+  "roots": [
+    "<rootDir>"
   ],
   "globals": {
     "__DEV__": true
   },
   "transform": {
-    ".*": "/home/DreD/work/sweetdreams/client/node_modules/babel-jest"
+    "^.+\\.js$": "babel-jest"
   },
   "setupFiles": [
-    "setupEnv.js"
+    "<rootDir>/setupEnv.js"
   ],
   "moduleFileExtensions": [
     "js",
     "json"
   ],
-  "setupTestFrameworkScriptFile": "jest/setupTestFramework.js",
+  "setupFilesAfterEnv": ["<rootDir>/testSetupFile.js"],
   "testRegex": "/__tests__/.*\\-test\\.(es6|js)$",
   "modulePathIgnorePatterns": [
     "/tmp/",

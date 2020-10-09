@@ -7,7 +7,7 @@
     "start": "serve -s build",
     "build": "NODE_ENV=production webpack",
     "type-check:watch": "npm run type-check -- --watch",
-    "test": "NODE_PATH=node_modules jest --config=jest/config.json --no-cache",
+    "test": "NODE_PATH=node_modules jest --config=jest/config.json --passWithNoTests --no-cache",
     "clean": "rimraf lib dist es coverage",
     "lint": "eslint src test/utils test/components test/hooks",
     "prepare": "npm run clean && npm run build",
@@ -114,6 +114,7 @@
     "typesafe-actions": "^5.1.0",
     "typescript": "^3.9.7",
     "url-loader": "^4.1.0",
+    "vue-jest": "^3.0.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
