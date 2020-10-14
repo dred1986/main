@@ -1,4 +1,4 @@
-# Factory line manager
+# Factory line manager new
 [![Travis][build-badge]][build]
 [![Coveralls][coveralls-badge]][coveralls]
 
